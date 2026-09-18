@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v6
 
       - name: Show Xcode version
@@ -19,10 +19,24 @@ jobs:
           xcodebuild -version
           xcode-select -p
 
-      - name: Build iOS
+      - name: Check iOS project
+        run: |
+          echo "Repository:"
+          pwd
+          echo ""
+          echo "Files:"
+          ls -la
+          echo ""
+          echo "iOS folder:"
+          ls -la ios
+          echo ""
+          echo "Xcode projects:"
+          find ios -name "*.xcodeproj" -maxdepth 3
+
+      - name: Build MenaAI
         run: |
           xcodebuild \
-            -project MenaAI.xcodeproj \
+            -project ios/MenaAI.xcodeproj \
             -scheme MenaAI \
             -sdk iphoneos \
             -configuration Release \
@@ -31,15 +45,20 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             build
 
-      - name: Create IPA folder
+      - name: Check build
+        run: |
+          echo "Build products:"
+          find build -name "*.app" -print
+
+      - name: Create IPA
         run: |
           mkdir -p Payload
-          cp -R build/Build/Products/Release-iphoneos/MenaAI.app Payload/
-          mkdir -p ipa
-          zip -r ipa/MenaAI-V1.0.ipa Payload
+          cp -R build/Build/Products/Release-iphoneos/MenaAI.app Payload/MenaAI.app
+          zip -r MenaAI-V1.0.ipa Payload
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: MenaAI-iOS-V1.0
-          path: ipa/MenaAI-V1.0.ipa
+          path: MenaAI-V1.0.ipa
+          retention-days: 30
