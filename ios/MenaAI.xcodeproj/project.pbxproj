@@ -1,25 +1,213 @@
 // !$*UTF8*$!
 {
-archiveVersion=1; classes={}; objectVersion=56;
-objects={
-A1={isa=PBXBuildFile;fileRef=B1;};
-A2={isa=PBXBuildFile;fileRef=B2;};
-B1={isa=PBXFileReference;lastKnownFileType=sourcecode.swift;path=AppDelegate.swift;};
-B2={isa=PBXFileReference;lastKnownFileType=sourcecode.swift;path=MainViewController.swift;};
-B3={isa=PBXFileReference;lastKnownFileType=text.plist.xml;path=Info.plist;};
-B4={isa=PBXFileReference;explicitFileType=wrapper.application;path=MenaAI.app;sourceTree=BUILT_PRODUCTS_DIR;};
-C1={isa=PBXSourcesBuildPhase;files=(A1,A2);};
-C2={isa=PBXResourcesBuildPhase;files=();};
-C3={isa=PBXFrameworksBuildPhase;files=();};
-D1={isa=PBXGroup;children=(B1,B2,B3);path=MenaAI;sourceTree="<group>";};
-D2={isa=PBXGroup;children=(B4);name=Products;sourceTree="<group>";};
-D3={isa=PBXGroup;children=(D1,D2);sourceTree="<group>";};
-E1={isa=PBXNativeTarget;buildPhases=(C3,C1,C2);buildConfigurationList=G2;name=MenaAI;productName=MenaAI;productReference=B4;productType="com.apple.product-type.application";};
-E2={isa=PBXProject;buildConfigurationList=G1;mainGroup=D3;productRefGroup=D2;targets=(E1);compatibilityVersion="Xcode 14.0";};
-F1={isa=XCBuildConfiguration;buildSettings={INFOPLIST_FILE=MenaAI/Info.plist;PRODUCT_BUNDLE_IDENTIFIER=net.menahost.menaai;SWIFT_VERSION=5.0;IPHONEOS_DEPLOYMENT_TARGET=16.0;TARGETED_DEVICE_FAMILY="1,2";CODE_SIGN_STYLE=Automatic;};name=Debug;};
-F2={isa=XCBuildConfiguration;buildSettings={INFOPLIST_FILE=MenaAI/Info.plist;PRODUCT_BUNDLE_IDENTIFIER=net.menahost.menaai;SWIFT_VERSION=5.0;IPHONEOS_DEPLOYMENT_TARGET=16.0;TARGETED_DEVICE_FAMILY="1,2";CODE_SIGN_STYLE=Automatic;};name=Release;};
-G1={isa=XCConfigurationList;buildConfigurations=(F1,F2);defaultConfigurationName=Release;};
-G2={isa=XCConfigurationList;buildConfigurations=(F1,F2);defaultConfigurationName=Release;};
-};
-rootObject=E2;
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1 = {
+			isa = PBXBuildFile;
+			fileRef = B1;
+		};
+		A2 = {
+			isa = PBXBuildFile;
+			fileRef = B2;
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppDelegate.swift;
+			sourceTree = "<group>";
+		};
+		B2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = MainViewController.swift;
+			sourceTree = "<group>";
+		};
+		B3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		B4 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = MenaAI.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1 = {
+			isa = PBXGroup;
+			children = (
+				B1,
+				B2,
+				B3,
+			);
+			name = MenaAI;
+			path = MenaAI;
+			sourceTree = "<group>";
+		};
+		D2 = {
+			isa = PBXGroup;
+			children = (
+				B4,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3 = {
+			isa = PBXGroup;
+			children = (
+				D1,
+				D2,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G2;
+			buildPhases = (
+				C3,
+				C1,
+				C2,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenaAI;
+			productName = MenaAI;
+			productReference = B4;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2 = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2660;
+			};
+			buildConfigurationList = G1;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3;
+			productRefGroup = D2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1,
+				A2,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MenaAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.menahost.menaai;
+				PRODUCT_NAME = MenaAI;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MenaAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.menahost.menaai;
+				PRODUCT_NAME = MenaAI;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G1 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1,
+				F2,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1,
+				F2,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2;
 }
